@@ -18,8 +18,8 @@ export default function HomeScreen(){
             setLoading(false);
             setProducts(data);
 
-          } catch(error){
-            setError(error.message);
+          } catch(err){
+            setError(err.message);
             setLoading(false);
           }
           
@@ -28,8 +28,9 @@ export default function HomeScreen(){
     }, [])
     return(
       <div>
+        
         {
-          //loading? ( <LoadingBox></LoadingBox>) :error? (<MessageBox variant="danger">{error}</MessageBox>) :
+          loading? ( <LoadingBox></LoadingBox>) :error? (<MessageBox variant="danger">{error}</MessageBox>) :
           (<div className='row center'>
           {products.map((product) => (
             <Product key={product._id} product={product}></Product>
