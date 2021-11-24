@@ -14,7 +14,7 @@ const data = {
         },
         {
             _id: '2',
-            name: 'Produto 1',
+            name: 'Produto 2',
             categoria: 'Categoria',
             imagem: '/images/p2.png',
             price:  256,
@@ -26,7 +26,7 @@ const data = {
         },
         {
             _id: '3',
-            name: 'Produto 1',
+            name: 'Produto 3',
             categoria: 'Categoria',
             imagem: '/images/p3.png',
             price: 15,
@@ -38,7 +38,7 @@ const data = {
         },
         {
             _id: '4',
-            name: 'Produto 1',
+            name: 'Produto 4',
             categoria: 'Categoria',
             imagem: '/images/p4.png',
             price: 220000,
@@ -50,7 +50,7 @@ const data = {
         },
         {
             _id: '5',
-            name: 'Produto 1',
+            name: 'Produto 5',
             categoria: 'Categoria',
             imagem: '/images/p5.png',
             price: 123.40,
@@ -62,7 +62,7 @@ const data = {
         },
         {
             _id: '6',
-            name: 'Produto 1',
+            name: 'Produto 6',
             categoria: 'Categoria',
             imagem: '/images/p6.png',
             price: 12,
