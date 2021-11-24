@@ -1,7 +1,23 @@
+import bcrypt from 'bcrypt';
+
 const data = {
+    users: [
+        {
+            name: 'Kley',
+            email: 'admin@example.com',
+            password: bcrypt.hashSync('1234', 8),
+            isAdmin: true,
+        },
+        {
+            name: 'David',
+            email: 'user@example.com',
+            password: bcrypt.hashSync('1234', 8),
+            isAdmin: false,
+        }
+    ],
     products:[
         {
-            _id: '1',
+           
             name: 'Produto 1',
             categoria: 'Categoria',
             imagem: '/images/p1.png',
@@ -13,7 +29,7 @@ const data = {
             description: 'Produto de alta qualidade',
         },
         {
-            _id: '2',
+            
             name: 'Produto 2',
             categoria: 'Categoria',
             imagem: '/images/p2.png',
@@ -25,7 +41,7 @@ const data = {
             description: 'Produto de alta qualidade',
         },
         {
-            _id: '3',
+            
             name: 'Produto 3',
             categoria: 'Categoria',
             imagem: '/images/p3.png',
@@ -37,7 +53,7 @@ const data = {
             description: 'Produto de alta qualidade',
         },
         {
-            _id: '4',
+            
             name: 'Produto 4',
             categoria: 'Categoria',
             imagem: '/images/p4.png',
@@ -49,7 +65,7 @@ const data = {
             description: 'Produto de alta qualidade',
         },
         {
-            _id: '5',
+            
             name: 'Produto 5',
             categoria: 'Categoria',
             imagem: '/images/p5.png',
@@ -61,7 +77,7 @@ const data = {
             description: 'Produto de alta qualidade',
         },
         {
-            _id: '6',
+            
             name: 'Produto 6',
             categoria: 'Categoria',
             imagem: '/images/p6.png',
